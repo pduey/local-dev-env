@@ -1,0 +1,331 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Jul 12 08:50:39 2023
+;; Desktop file format version 208
+;; Emacs version 28.2
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (25774 41375 312834 0) (desktop . "208") "paulduey@PU-PaulDuey" nil nil ((((minibuffer) (undecorated) (override-redirect) (font . "-*-Monaco-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#333333") (background-color . "#eaf7e1") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 0) (right-fringe . 8) (no-special-glyphs) (alpha) (scroll-bar-foreground . "black") (scroll-bar-background) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (inhibit-double-buffering) (menu-bar-lines . 0) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . light) (cursor-color . "#21BDFF") (last-focus-update) (frameset--id . "6C38-7EF7-287B-5FCE") (frameset--mini nil . "2DDF-3498-38FF-8B80") (modeline . t) (unsplittable . t) (icon-name) (display . "Mac") (explicit-name) (tool-bar-position . top) (height . 32) (width . 46) (left . 415) (top . 97)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 64) (min-pixel-width . 70) (min-pixel-height-ignore . 48) (min-pixel-width-ignore . 42) (min-pixel-height-safe . 16) (min-pixel-width-safe . 14)) leaf (last . t) (pixel-width . 345) (pixel-height . 512) (total-width . 49) (total-height . 32) (normal-height . 1.0) (normal-width . 1.0) (buffer " SPEEDBAR" (selected) (hscroll . 0) (fringes 0 8 nil nil) (margins nil) (scroll-bars nil 3 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 545) (start . 1))) (((minibuffer . t) (undecorated) (override-redirect) (font . "-*-Monaco-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#333333") (background-color . "#eaf7e1") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (alpha) (scroll-bar-foreground . "black") (scroll-bar-background) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (inhibit-double-buffering) (menu-bar-lines . 1) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . light) (cursor-color . "#21BDFF") (environment) (last-focus-update . t) (frameset--id . "2DDF-3498-38FF-8B80") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "Mac") (explicit-name) (tool-bar-position . top) (height . 49) (width . 131) (left . 762) (top . 98)) ((min-height . 8) (min-width . 10) (min-height-ignore . 7) (min-width-ignore . 7) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 128) (min-pixel-width . 70) (min-pixel-height-ignore . 112) (min-pixel-width-ignore . 49) (min-pixel-height-safe . 32) (min-pixel-width-safe . 14)) vc (pixel-width . 948) (pixel-height . 768) (total-width . 135) (total-height . 48) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 948) (pixel-height . 384) (total-width . 135) (total-height . 24) (normal-height . 0.5) (normal-width . 1.0) (buffer "carouselControlsNew.js" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 3 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1267) (start . 999)) (prev-buffers ("screen.js" 1 384) ("carouselControlsNew.js" 1 916) ("container-carousel.js" 1 1214) ("container-carousel-new.test.js<websdk>" 1 586) ("container-carousel-new.test.js<web-sdk-legacy>" 1 1) ("container-carousel-new.js" 1 82) ("*scratch*" 1 146) ("grpc_call_spec.rb" 1 129) ("package-lock.json" 1174521 1174965))) (leaf (last . t) (pixel-width . 948) (pixel-height . 384) (total-width . 135) (total-height . 24) (normal-height . 0.5) (normal-width . 1.0) (buffer "*Buffer List*" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 3 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 904) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name "/Users/paulduey/devel/telapp/TAGS")
+(setq tags-table-list '("/Users/paulduey/devel/telapp/TAGS"))
+(setq search-ring '(#("appdata" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("appdata.settings.translations" 0 29 (isearch-regexp-function nil isearch-case-fold-search t)) #("app.sett" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("appdata.settings" 0 16 (isearch-regexp-function nil isearch-case-fold-search t)) #("pure" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("websdk" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("care_plans" 0 10 (isearch-regexp-function nil isearch-case-fold-search t)) #("one" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("halth" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("sku_cd" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("def product" 0 11 (isearch-regexp-function nil isearch-case-fold-search t)) #("consultation" 0 12 (isearch-case-fold-search t isearch-regexp-function nil)) #("invoice" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("member_id" 0 9 (isearch-regexp-function nil isearch-case-fold-search t)) #("def member_id" 0 13 (isearch-regexp-function nil isearch-case-fold-search t)) #("api_service" 0 11 (isearch-regexp-function nil isearch-case-fold-search t))))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/" "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/theme/default/screen.js" "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/theme/default/carouselControlsNew.js" "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/fields/container-carousel.js" "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/tests/fields/container-carousel-new.test.js" "/Users/paulduey/devel/web-sdk-legacy/src/tests/fields/container-carousel-new.test.js" "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/fields/container-carousel-new.js" "~/Downloads/pnpm-list.txt" "/Users/paulduey/devel/telapp/mobile_api/spec/services/external_requests/grpc/grpc_call_spec.rb" "/Users/paulduey/devel/fe-member-portal/package-lock.json" "~/tmp/feature_data_overload.txt" "/Users/paulduey/devel/health-info/script/seeds/care_plan.rb" "~/devel/telapp/tas/app/models/teladoc_services/product.rb" "/Users/paulduey/devel/telapp/tas/app/models/teladoc_services/model.rb" "~/devel/telapp/tas/app/models/consultation.rb" "/Users/paulduey/devel/telapp/tas/app/models/consultation_invoice_processor.rb" "~/devel/telapp/tas/app/models/invoice.rb" "/Users/paulduey/devel/telapp/tas/lib/generator/consultation_generator.rb" "~/devel/health-info/app/models/member.rb" "~/devel/health-info/app/models/care_plans_collection.rb" "/Users/paulduey/devel/health-info/app/models/screens/care_plans_list_screen.rb" "~/devel/health-info/config/environments/development.rb" "/Users/paulduey/devel/health-info/config/environments/development.rb" "~/devel/telapp/mobile_api/app/models/new_base_workflow.rb" "/Users/paulduey/devel/telapp/mobile_api/app/models/base_screen_setting.rb" "/Users/paulduey/devel/telapp/mobile_api/app/services/teladoc/screen_viewport_service.rb" "/Volumes/mine/numbers.yml" "~/devel/telapp/mobile_api/app/models/screen_schemas/health_info_error_screen_schema.rb" "~/devel/telapp/mobile_api/app/models/screens/health_info_error_screen.rb" "/Users/paulduey/devel/telapp/mobile_api/app/models/workflows/health_info_error_workflow.rb" "/Users/paulduey/devel/health-info/app/models/screens/error_screen.rb" "~/devel/health-info/app/models/care_plan/item.rb" "/Users/paulduey/devel/health-info/app/models/care_plan.rb" "~/devel/telapp/mobile_api/app/controllers/health_info_controller.rb" "~/devel/health-info/app/controllers/application_controller.rb" "~/devel/health-info/app/controllers/care_plans_controller.rb" "/Users/paulduey/devel/telapp/tas/.env.local" "~/devel/health-info/app/models/workflows/workflow.rb" "~/devel/health-info/app/models/workflows/care_plans_list_workflow.rb" "/Users/paulduey/devel/telapp/tas/Gemfile" "/Users/paulduey/devel/telapp/mobile_api/config/routes/teladoc_routes.rb" "/Users/paulduey/devel/telapp/mobile_api/mobile_api/config/routes/teladoc_routes.rb" "/Users/paulduey/devel/telapp/tas/spec/uploaders/member_image_uploader_spec.rb" "/Users/paulduey/devel/telapp/tas/config/environments/test.rb" "~/devel/telapp/admin/.env.local" "/Users/paulduey/devel/telapp/admin/config/environments/development.rb" "/Users/paulduey/devel/telapp/client/config/environments/development.rb" "/Users/paulduey/devel/telapp/provider/config/environments/development.rb" "/Users/paulduey/devel/telapp/tas/.env.test.local" "/Users/paulduey/devel/telapp/tas/spec/spec_helper.rb" "~/devel/telapp/mobile_api/app/controllers/api/v2/teladoc/members/screens/dashboard_controller.rb" "/Users/paulduey/devel/telapp/tas/spec/spec_helper.rb" "~/devel/telapp/tas/config/environments/test.rb" "~/devel/telapp/tas/config/environments/development.rb" "/Users/paulduey/devel/telapp/tas/config/environments/development.rb" "~/devel/telapp/tas/config/initializers/sidekiq.rb" "/Users/paulduey/devel/telapp/tas/spec/spec_helper.rb" "~/devel/telapp/tas/.env.test.local" "/Users/paulduey/devel/telapp/tas/.env.test" "~/devel/telapp/mobile_api/app/models/screens/consultation_list_screen.rb" "/Users/paulduey/devel/telapp/tas/config/initializers/sidekiq.rb" "~/devel/telapp/tas/.env.development" "~/devel/telapp/tas/config/puma.rb" "~/devel/telapp/mobile_api/app/models/screens/consultation_list_screen.rb" "/Users/paulduey/devel/fe-member-portal/packages/ccm/packages/ui/common/apptentive/apptentive-utils.js" "/Users/paulduey/devel/fe-member-portal/apps/one-app/src/app/Root.js" "/Users/paulduey/devel/telapp/admin/.env.development" "/Users/paulduey/devel/telapp/callcenter/.env.development" "/Users/paulduey/devel/telapp/client/.env.development" "/Users/paulduey/devel/telapp/member/.env.development" "/Users/paulduey/devel/telapp/mobile_api/.env.development" "/Users/paulduey/devel/telapp/provider/.env.development" "/Users/paulduey/devel/telapp/tas/.env.development" "/Users/paulduey/devel/telapp/mobile_api/config/puma.rb" "/Users/paulduey/devel/telapp/tas/db/seeds/app_feature_flag.rb" "~/devel/health-info/.env.local" "~/devel/health-info/.env" "~/devel/telapp/mobile_api/config/routes/teladoc_routes.rb" "~/devel/health-info/config/routes.rb" "~/devel/telapp/mobile_api/app/controllers/health_info_controller.rb" "/Users/paulduey/devel/health-info/config/environments/development.rb" "/Users/paulduey/devel/telapp/mobile_api/config/routes/teladoc_routes.rb" "/Users/paulduey/devel/telapp/mobile_api/.env.local" "/Users/paulduey/devel/telapp/mobile_api/Gemfile" "~/devel/telapp/tas/../mobile_api/.env.local" "/Users/paulduey/devel/telapp/tas/.env.local" "/Volumes/mine/numbers.yml" "/Users/paulduey/devel/telapp/mobile_api/app/models/screens/visit_summary_screen.rb" "/Users/paulduey/devel/telapp/mobile_api/app/models/screen_settings/visit_summary_screen_setting.rb" "~/devel/telapp/mobile_api/app/models/screens_collection.rb" "/Users/paulduey/devel/telapp/mobile_api/app/models/new_base_workflow.rb" "/Users/paulduey/devel/telapp/mobile_api/app/services/external_requests/tas/v4.rb" "/Users/paulduey/devel/telapp/mobile_api/app/services/consult_service.rb" "/Users/paulduey/devel/telapp/tas/app/serializers/v4/consultation_list_item_serializer.rb" "/Users/paulduey/devel/telapp/tas/app/serializers/consultations/v4/consultation_serializer.rb" "~/devel/telapp/tas/app/controllers/v4/consultations_controller.rb" "~/devel/telapp/tas/app/controllers/v4/members_controller.rb" "/Users/paulduey/devel/telapp/tas/app/controllers/v4/consultations_controller.rb" "~/devel/telapp/mobile_api/app/controllers/api/v2/teladoc/members/screens/request_consult/request_consult_base_controller.rb" "/Users/paulduey/devel/fe-member-portal/apps/one-app/package.json"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/theme/default/carouselControlsNew.js"
+  "carouselControlsNew.js"
+  'js-mode
+  '(ws-butler-mode ctags-auto-update-mode)
+  1267
+  '(195 nil)
+  nil
+  nil
+  '((buffer-display-time 25774 41372 697694 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (887 828 916 895 439 488 913 940 919 902 895 911 916 887 207 1328))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/theme/default/screen.js"
+  "screen.js"
+  'js-mode
+  '(ws-butler-mode ctags-auto-update-mode)
+  2126
+  '(28 nil)
+  nil
+  nil
+  '((buffer-display-time 25773 51476 284857 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (35 236 442 45 35 28 1886))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/fields/container-carousel.js"
+  "container-carousel.js"
+  'js-mode
+  '(ws-butler-mode ctags-auto-update-mode)
+  1214
+  '(738 nil)
+  nil
+  nil
+  '((buffer-display-time 25773 50403 607961 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (747))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/tests/fields/container-carousel-new.test.js"
+  "container-carousel-new.test.js"
+  'js-mode
+  '(ws-butler-mode ctags-auto-update-mode)
+  586
+  '(558 nil)
+  nil
+  nil
+  '((buffer-display-time 25773 50320 272590 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (585))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/web-sdk-legacy/src/tests/fields/container-carousel-new.test.js"
+  "container-carousel-new.test.js"
+  'js-mode
+  '(ws-butler-mode ctags-auto-update-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 25773 50310 496853 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/web-sdk-legacy/packages/websdk/src/fields/container-carousel-new.js"
+  "container-carousel-new.js"
+  'js-mode
+  '(ws-butler-mode ctags-auto-update-mode)
+  82
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 25773 50309 419748 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (82))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/telapp/mobile_api/spec/services/external_requests/grpc/grpc_call_spec.rb"
+  "grpc_call_spec.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  129
+  '(1267 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25773 37798 268816 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1603 1801 1766 1716 276 101 129))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/fe-member-portal/package-lock.json"
+  "package-lock.json"
+  'js-mode
+  '(ws-butler-mode ctags-auto-update-mode)
+  5123
+  '(1174953 nil)
+  nil
+  nil
+  '((buffer-display-time 25773 36880 240824 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3555 1173843 3555 1 5111 1174953))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/tmp/feature_data_overload.txt"
+  "feature_data_overload.txt"
+  'text-mode
+  '(ctags-auto-update-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 25772 25100 863046 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 1))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/app/models/workflows/care_plans_list_workflow.rb"
+  "care_plans_list_workflow.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  2769
+  '(1456 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25772 25023 827203 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1456 2002 2563 2605 1567 1591 1485 1039 1105 1032 2812 3255 1925 1943 3255 2811))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/telapp/mobile_api/app/models/screen_schemas/medical_info/care_plans_list_screen_schema.rb"
+  "care_plans_list_screen_schema.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  20
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25768 34080 101110 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/app/models/screens/care_plans_list_screen.rb"
+  "care_plans_list_screen.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  115
+  '(115 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25768 33983 919382 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (216 1442 262 774 1271 1417 1363 1425 1278 294 365 491 533 533 366 188))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/app/models/member.rb"
+  "member.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  478
+  '(29 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25768 33648 236361 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1180 81 776 181 846 81 81 29 1570 1580 6889 6889 6814 1570 1374 478))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/app/controllers/care_plans_controller.rb"
+  "care_plans_controller.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  275
+  '(324 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25768 33386 800346 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (355 324 378 540 587 107 107 564 540 577 556 63 314 303 451 323))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/app/models/care_plans_collection.rb"
+  "care_plans_collection.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  87
+  '(69 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25768 25941 895185 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (7 143 17 7 52 189 189 136 189 87))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/app/services/external_requests/tas/v5.rb"
+  "v5.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  552
+  '(572 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25768 25232 289904 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/app/controllers/application_controller.rb"
+  "application_controller.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  62
+  '(65 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25766 59768 773608 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/telapp/tas/.env.local"
+  ".env.local"
+  'fundamental-mode
+  '(ctags-auto-update-mode)
+  369
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 25766 52692 228135 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/app/models/workflows/workflow.rb"
+  "workflow.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25765 58790 488083 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/config/routes.rb"
+  "routes.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  34
+  '(48 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25765 58768 632369 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (37 232))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/tools/release_scan_v2/.env"
+  ".env"
+  'fundamental-mode
+  '(ctags-auto-update-mode)
+  646
+  '(277 nil)
+  nil
+  nil
+  '((buffer-display-time 25765 58709 771145 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (109 109 109 109 277 109 641 646))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/.env.local"
+  ".env.local"
+  'fundamental-mode
+  '(ctags-auto-update-mode)
+  235
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 25756 36049 560915 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 1 235))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/health-info/.env"
+  ".env"
+  'fundamental-mode
+  '(ctags-auto-update-mode)
+  312
+  '(218 nil)
+  nil
+  nil
+  '((buffer-display-time 25756 35855 24011 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (311))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/devel/acceptance_tests_redesign/web/teladoc/features/support/env.rb"
+  "env.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode smerge-mode)
+  1
+  '(774 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25753 57011 870579 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1292 1053 1292 1254 1188 1291 1220 1855 1504 1518 1104 356 471 963 774))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/ttt.rb"
+  "ttt.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  26
+  '(1 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25743 17551 498771 226000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2277 1 1 2083 2337 2277 849))))
+
+(desktop-create-buffer 208
+  "/Users/paulduey/.asdf/installs/ruby/2.7.6/lib/ruby/gems/2.7.0/bundler/gems/flow_ui_api_core-bc65e2facd37/lib/flow_ui_api_core/base_external_api_service.rb"
+  "base_external_api_service.rb"
+  'enh-ruby-mode
+  '(abbrev-mode ws-butler-mode ctags-auto-update-mode)
+  4082
+  '(4168 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 25738 53383 228239 226000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3923 400 469 400 414 1357 1384 2243 2282 3531 3577 3021 3034 799 817 615))))
+

@@ -1,0 +1,83 @@
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(server-start)
+
+(autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
+(add-to-list 'auto-mode-alist
+             '("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . enh-ruby-mode))
+(add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
+
+(add-hook 'enh-ruby-mode-hook
+          (lambda ()
+            (setq show-trailing-whitespace t)))
+
+(require 'ws-butler)
+(add-hook 'prog-mode-hook #'ws-butler-mode)
+(add-hook 'ruby-mode-hook 'ws-butler-mode)
+(add-hook 'enh-ruby-mode-hook 'ws-butler-mode)
+
+(auto-fill-mode 0)
+
+(require 'haml-mode)
+(add-hook 'haml-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode nil)
+            (define-key haml-mode-map "\C-m" 'newline-and-indent)))
+
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . markdown-mode))
+
+
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+
+(add-hook 'enh-ruby-mode (rbtagger-mode))
+(add-hook 'ruby-mode-hook 'ruby-electric-mode)
+
+(require 'ruby-hash-syntax)
+
+;; remap mac command key c + v to copy and paste
+(global-set-key (kbd "s-c") 'kill-ring-save)
+(global-set-key (kbd "s-v") 'yank)
+
+(add-hook 'ruby-mode-hook 'rufo-minor-mode)
+
+(require 'iedit)
+
+(ctags-global-auto-update-mode)
+(setq ctags-update-prompt-create-tags nil)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(css-indent-offset 2)
+ '(custom-enabled-themes '(leuven))
+ '(exec-path
+   '("/opt/homebrew/bin" "/opt/homebrew/sbin" "/usr/local/bin" "/usr/bin" "/bin" "/usr/sbin" "/sbin" "/Applications/Emacs.app/Contents/MacOS/libexec" "/Applications/Emacs.app/Contents/MacOS/bin" "/var/folders/wb/pbgkxzfd1nb15j98z9gh5xm40000gn/T/frum_2099_1642776662883/bin"))
+ '(indent-tabs-mode nil)
+ '(js-indent-level 2)
+ '(mac-command-modifier 'super)
+ '(package-selected-packages
+   '(ctags-update iedit rufo counsel ivy dired-filetype-face ruby-hash-syntax yaml-mode haml-mode ws-butler enh-ruby-mode markdown-mode))
+ '(ring-bell-function 'ignore)
+ '(save-place-mode t)
+ '(size-indication-mode t)
+ '(warning-suppress-log-types '((auto-save))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :extend nil :stipple nil :background "#eaf7e1" :foreground "#333333" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Monaco"))))
+ '(enh-ruby-mode-default ((t (:inherit default :background "#eaf7e1"))) t))

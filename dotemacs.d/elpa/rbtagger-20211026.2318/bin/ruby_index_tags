@@ -1,0 +1,217 @@
+#!/usr/bin/env bash
+set -e
+
+project_dir=${1:-$(pwd)}
+project_name=$(basename $project_dir)
+gemfile="${project_dir}/Gemfile"
+temp_tags_file="${project_dir}/TAGS.temp"
+final_tags_file="${project_dir}/TAGS"
+lock_timeout_seconds=300 # 5 minutes
+
+function warn {
+    local message=$@
+
+    echo "$message" 1>&2
+}
+
+function abort {
+    local message=$@
+
+    warn "$message"
+    exit 1
+}
+
+function current_timestamp {
+    echo $(date +%s)
+}
+
+function check_if_script_can_run {
+    if ! command -v gem > /dev/null; then
+        abort "Can't find gem command. Ruby doesn't seem to be installed."
+    fi
+
+    if ! ripper-tags --help > /dev/null 2>&1; then
+        echo "Installing ripper-tags gem..."
+        gem install ripper-tags
+    fi
+
+    if ! command -v bundler > /dev/null; then
+        # We don't automatically install bundler because the user might
+        # prefer a specific version.
+        abort "Can't find bundler. Make sure to gem install bundler."
+    fi
+
+    if [[ ! -f $gemfile ]]; then
+        abort "Could not generate tags. Are you in a Ruby project directory?"
+    fi
+}
+
+function cleanup {
+    rm -f "$temp_tags_file"
+}
+
+function wait_on_lock {
+    local start_timestamp=$(current_timestamp)
+    local elapsed_seconds
+
+    while [[ -f "$temp_tags_file" ]]; do
+        elapsed_seconds=$(($(current_timestamp) - $start_timestamp))
+
+        if [[ "$elapsed_seconds" -ge "$lock_timeout_seconds" ]]; then
+            abort "Timeout of ${lock_timeout_seconds} seconds exceeded!" \
+                  "If the script is not running, manually delete" \
+                  "the ${temp_tags_file} temporary tags file that serves " \
+                  "as a lock file"
+        fi
+
+        sleep 1
+    done
+}
+
+function lock {
+    touch "$temp_tags_file"
+}
+
+function index_main_project {
+    local temp_tags_file=$1
+
+    echo "Indexing main project..."
+
+    ripper_tags_wrapper --tag-file "$temp_tags_file" "$project_dir"
+}
+
+function ripper_tags_wrapper {
+    if ! ripper-tags --extra=q --force --recursive --emacs \
+         --exclude=.git --exclude='.#*.rb' "$@" > /dev/null; then
+        abort "Ripper tags failed"
+    fi
+}
+
+function index_project_gems {
+    local temp_tags_file=$1
+    local gem_dir="$(gem environment gemdir)"
+    local gem_list
+    local gem_list_cache_file="${gem_dir}/gems.${project_name}"
+    local gem_tags_cache_file="${gem_dir}/TAGS.${project_name}"
+
+    if ! gem_list=$(bundle list --paths | grep -e "^/"); then
+        warn "Command to list gems failed. Bundler returned an error."
+
+        if [[ -f "$gem_tags_cache_file" ]]; then
+            gem_list=$(cat $gem_list_cache_file)
+        else
+            abort "Tags generation failed!"
+        fi
+    fi
+
+    if [[ -f "$gem_tags_cache_file" ]] && [[ -f "$gem_list_cache_file" ]]; then
+        if cmp <(echo "$gem_list") $gem_list_cache_file > /dev/null 2>&1; then
+            echo "Gems did not change, skipping..."
+            cat "$gem_tags_cache_file" >> "$temp_tags_file"
+            return
+        fi
+    fi
+
+    if [[ -n "$gem_list" ]]; then
+        echo "$gem_list" > "$gem_list_cache_file"
+        rm -f "$gem_tags_cache_file" > /dev/null 2>&1
+
+        for gem_dir in $gem_list; do
+            index_dir "$gem_dir" "$gem_tags_cache_file"
+        done
+
+        cat "$gem_tags_cache_file" >> "$temp_tags_file"
+    fi
+}
+
+function index_stdlib {
+    local temp_tags_file=$1
+    local stdlib_dir=""
+
+    for dir in $(ruby -e "puts \$LOAD_PATH"); do
+        if [[ -f "$dir/set.rb" ]]; then
+            stdlib_dir="$dir"
+            break
+        fi
+    done
+
+    if [[ -n "$stdlib_dir" ]]; then
+        index_dir "$stdlib_dir" "$temp_tags_file" "Ruby standard library"
+    else
+        echo "Ruby standard library not found!" 1>&2
+    fi
+}
+
+function index_dir {
+    local dir=$1
+    local temp_tags_file=$2
+    local name=${3:-$(basename $dir)}
+
+    if [[ ! -d "$dir" ]]; then
+        warn "${name} not found"
+        return
+    fi
+
+    if is_git_dir "$dir"; then
+        local tags_file="${dir}/.TAGS"
+    else
+        local tags_file="${dir}/TAGS"
+    fi
+
+    if [[ ! -f $tags_file ]] || should_index_git_dir "$dir"; then
+        echo "Indexing ${name}..."
+        ripper_tags_wrapper --tag-file "$tags_file" "$dir"
+    else
+        echo "${name} already indexed"
+    fi
+
+    cat "$tags_file" >> "$temp_tags_file"
+}
+
+function is_git_dir {
+    local gem_dir=$1
+    local git_dir="${gem_dir}/.git"
+
+    if [[ ! -f $git_dir ]] && [[ ! -d $git_dir ]]; then
+        return 1
+    fi
+}
+
+function should_index_git_dir {
+    local gem_dir=$1
+
+    if ! is_git_dir "$gem_dir"; then
+        return 1
+    fi
+
+    local commit_hash_file="${gem_dir}/.ruby_tags_commit_hash"
+    local current_commit_hash
+
+    current_commit_hash=$(git -C "$gem_dir" rev-parse HEAD)
+
+    if [[ -f $commit_hash_file ]]; then
+        last_commit_hash="$(cat "$commit_hash_file")"
+    fi
+
+    if [[ $last_commit_hash != "$current_commit_hash" ]]; then
+        echo "$current_commit_hash" > "$commit_hash_file"
+        return 0
+    else
+        return 1
+    fi
+}
+
+check_if_script_can_run
+wait_on_lock
+lock
+
+trap "cleanup" EXIT
+
+index_main_project "$temp_tags_file"
+index_stdlib "$temp_tags_file"
+index_project_gems "$temp_tags_file"
+
+mv "$temp_tags_file" "$final_tags_file"
+
+echo
+echo "Tags generation finished! File: ${final_tags_file}"
