@@ -9,11 +9,15 @@ personal zsh and emacs config
 4. get a new terminal
 
 # emacs
-```sh
-$ brew tap railwaycat/emacsmacport
+`$ brew tap railwaycat/emacsmacport`
 copy the dotemacs and dotemacs.d from this repo into ~/.emacs and ~/.emacs.d
+```
 $ brew services start emacs
 $ brew install universal-ctags
 $ brew link universal-ctags
 # example for setting up ctags
 $ ctags --recurse=yes --languages=ruby --links=no --output-format=etags flow_ui_api_core health-info telapp
+```
+in finder, go to the emacs application, right click, and choose get info
+drag the gnu-head-icon.icns file to the small icon in the top right.
+it might not take effect everywhere until after a reboot (or restarting some specific service).
