@@ -1,15 +1,21 @@
 # zsh-emacs
-personal zsh and emacs config
+Personal zsh and emacs config. Clone repo into homedir.
 
 # zsh
 1. follow instructions at https://github.com/ohmyzsh/ohmyzsh
 2. copy the custom folder from this repo into ~/.oh-my-zsh
 3. large repos slow down the git_prompt_info. This fixes it.
 `git config --add oh-my-zsh.hide-dirty 1`
-4. get a new terminal
+4. get a new terminal to pick up changes
+
+# brew bundle
+1. install brew per instrunctions at https://brew.sh
+```zsh
+$ cd zsh-brew-emacs
+$ brew bundle
+```
 
 # emacs
-`$ brew tap railwaycat/emacsmacport`
 copy the dotemacs and dotemacs.d from this repo into ~/.emacs and ~/.emacs.d
 ```
 $ brew services start emacs
