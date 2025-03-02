@@ -1,5 +1,5 @@
-# zsh-emacs
-Personal zsh and emacs config. Clone repo into homedir.
+# zsh-brew-emacs
+Personal zshm, brew bundle, and emacs config. Clone repo into homedir.
 
 # zsh
 1. follow instructions at https://github.com/ohmyzsh/ohmyzsh
