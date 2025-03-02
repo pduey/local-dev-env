@@ -10,11 +10,10 @@ brew "allure"
 brew "pycparser"
 brew "cffi"
 brew "cryptography"
-brew "python@3.12"
 brew "ansible"
 brew "jpeg-xl"
 brew "asdf"
-brew "python@3.11"
+brew "python@3.12"
 brew "awscli"
 brew "azure-cli"
 brew "carthage"
@@ -37,10 +36,11 @@ brew "libheif"
 brew "libraw"
 brew "imagemagick"
 brew "memcached", restart_service: :changed
-brew "mysql@5.7", restart_service: :changed, link: true
+brew "mysql@8.0"
 brew "nginx", restart_service: :changed
 brew "postgresql@14", restart_service: :changed
 brew "python@3.10"
+brew "python@3.11"
 brew "python@3.9"
 brew "rbspy"
 brew "redis", restart_service: :changed
