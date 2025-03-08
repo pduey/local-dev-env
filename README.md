@@ -18,9 +18,8 @@ $ brew bundle
 # emacs
 emacs is installed with `brew bundle`
 
-in finder, go to the emacs application, right click, and choose get info
-drag the gnu-head-icon.icns file to the small icon in the top right.
-it might not take effect everywhere until after a reboot (or restarting some specific service).
+In finder, go to the emacs application, right click, and choose get info. Drag the gnu-head-icon.icns file to the small icon in the top right.
+It might not take effect everywhere until after a reboot (or restarting some specific service).
 
 copy the dotemacs and dotemacs.d from this repo into ~/.emacs and ~/.emacs.d
 ```
