@@ -11,7 +11,7 @@ oh-my-zsh customizations, brew bundle, and emacs config. Clone repo into homedir
 # brew bundle
 1. install brew per instrunctions at https://brew.sh
 ```zsh
-$ cd zsh-brew-emacs
+$ cd <dir with Brewfile>
 $ brew bundle
 ```
 
