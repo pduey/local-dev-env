@@ -9,7 +9,7 @@ oh-my-zsh customizations, brew bundle, and emacs config. Clone repo into homedir
 4. get a new terminal to pick up changes
 
 # brew bundle
-1. install brew per instrunctions at https://brew.sh
+1. install brew per instructions at https://brew.sh
 ```zsh
 $ cd <dir with Brewfile>
 $ brew bundle
