@@ -1,5 +1,15 @@
-# zsh-brew-emacs
-oh-my-zsh customizations, brew bundle, and emacs config. Clone repo into homedir.
+# local development environment
+oh-my-zsh customizations, brew bundle, emacs config, iTerm2 config... Clone the repo and follow instructions.
+
+# iTerm2
+1. go to iTerm2 -> Settings -> General -> Settings and import iTerm2\ State.itermexport
+   
+   <img width="787" alt="Settings" src="https://github.com/user-attachments/assets/ddd3e45d-b359-4947-bc49-a934af22dac2" />
+3. import ./teladoc-dev.py
+
+
+   <img width="711" alt="image" src="https://github.com/user-attachments/assets/37c4a226-5487-4a89-b1c8-10dba4b7e151" />
+
 
 # zsh
 1. follow instructions at https://github.com/ohmyzsh/ohmyzsh
