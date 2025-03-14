@@ -1,0 +1,15 @@
+# emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# pauld
+ttt*
+*.tmp
+rspec.out
+yarn-error.log

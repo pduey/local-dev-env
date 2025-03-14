@@ -1,0 +1,15 @@
+[user]
+	name = Paul Duey
+	email = paul.duey@teladochealth.com
+[color]
+	branch = auto
+	status = auto
+	dif = auto
+	diff = auto
+	ui = auto
+[core]
+	excludesfile = /Users/paulduey/.gitignore
+	editor = emacs
+[push]
+	default = current
+	autoSetupRemote = true
