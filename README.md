@@ -1,6 +1,9 @@
 # local development environment
 oh-my-zsh customizations, brew bundle, emacs config, iTerm2 config... Clone the repo and follow instructions.
 
+# git
+copy the dotgitconfig and dotgitignore from this repo into ~/.gitconfig and ~/.gitignore
+
 # iTerm2
 1. go to iTerm2 -> Settings -> General -> Settings and import iTerm2\ State.itermexport
    
