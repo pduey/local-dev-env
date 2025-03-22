@@ -8,7 +8,7 @@
 	diff = auto
 	ui = auto
 [core]
-	excludesfile = /Users/paulduey/.gitignore
+	excludesFile = ~/.gitignore
 	editor = emacs
 [push]
 	default = current
