@@ -1,17 +1,14 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.10
 
 import iterm2
 # This script was created with the "basic" environment which does not support adding dependencies
 # with pip.
 
 async def main(connection):
-    # Your code goes here. Here's a bit of example code that adds a tab to the current window:
     app = await iterm2.async_get_app(connection)
-    #window = app.async_create(connection)
-    # TODO: create a window instead of using current one
-    window = await iterm2.Window.async_create(connection)
+    window1 = await iterm2.Window.async_create(connection)
 
-    if window is not None:
+    if window1 is not None:
         session_1_1 = app.current_terminal_window.current_tab.current_session
         size = iterm2.Size(width=200, height=50)
         await session_1_1.async_set_grid_size(size)
@@ -48,7 +45,7 @@ async def main(connection):
         await session_2_1.async_send_text("setproject telapp/mobile_api; bundle exec rails s -p 4567\n")
 
         await session_2_2.async_activate()
-        await session_2_2.async_send_text("setproject telapp/health-info; bundle exec rails s -p 7000\n")
+        await session_2_2.async_send_text("setproject health-info; bundle exec rails s -p 7000\n")
 
         await session_2_3.async_activate()
         await session_2_3.async_send_text("setproject telapp/member; bundle exec rails s -p 3400\n")
@@ -59,7 +56,6 @@ async def main(connection):
         await session_2_5.async_activate()
         await session_2_5.async_send_text("setproject telapp/provider; bundle exec rails s -p 3500\n")
     else:
-        # You can view this message in the script console.
-        print("No current window")
+        print("Failed to open new window for servers")
 
 iterm2.run_until_complete(main)
