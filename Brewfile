@@ -17,6 +17,7 @@ brew "python@3.12"
 brew "awscli"
 brew "azure-cli"
 brew "carthage"
+brew "cmake"
 brew "ctop"
 brew "docutils"
 brew "gh"
@@ -35,9 +36,11 @@ brew "shared-mime-info"
 brew "libheif"
 brew "libraw"
 brew "imagemagick"
+brew "libmagic"
 brew "memcached", restart_service: :changed
-brew "mysql@8.0"
+brew "mysql@8.0", restart_service: :changed
 brew "nginx", restart_service: :changed
+brew "pkgconf"
 brew "postgresql@14", restart_service: :changed
 brew "python@3.10"
 brew "python@3.11"
