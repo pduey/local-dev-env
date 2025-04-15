@@ -27,6 +27,10 @@ copy the dotgitconfig and dotgitignore from this repo into ~/.gitconfig and ~/.g
 $ cd <dir with Brewfile>
 $ brew bundle
 ```
+To update:
+```zsh
+$ brew bundle dump -f
+```
 
 # emacs
 emacs is installed with `brew bundle`
