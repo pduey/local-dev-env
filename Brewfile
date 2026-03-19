@@ -37,6 +37,7 @@ brew "libraw"
 brew "memcached", restart_service: :changed
 brew "mysql@8.0", restart_service: :changed
 brew "nginx", restart_service: :changed
+brew "nvm"
 brew "pkgconf"
 brew "postgresql@14", restart_service: :changed
 brew "python@3.10"
